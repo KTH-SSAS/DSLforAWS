@@ -52,72 +52,57 @@ in markdown. -->
 
 ## Quick Info
 
-- Supervisor: [supervisor's full name](link-to-online-profile)
+- Supervisor: [Robert Lagerström](https://github.com/Chezz81), [Pontus Johnson](https://github.com/pontusj101)
 - Active members:
-  - [member 1](link-to-online-profile)
-- Past members:
-  - [First Last](link-to-online-profile)
-- Status: running :green_circle: (or pending :yellow_circle:, completed :orange_circle:)
-- Timeline: [VT-20](self-link-to github-project/milestones)
-- Parent project: [name-of-umbrella-project](link-to-umbrella-project)
+  - [Viktor Engström](https://github.com/viktorengstrom/)
+- External collaborators:
+  - Foreseeti AB
+- Status: running :green_circle:
+- Timeline: HT 2019 - Ongoing
 
-### Project links
+<!-- ### Project links -->
 
-- post here a list of links to project assets that are not located in the github
+<!--- post here a list of links to project assets that are not located in the github
   repo
 - [Overleaf project](link-to-overleaf-project)
 - [dropbox folder for large files](link-to-dropbox-folder)
-- [other link](#)
+- [other link](#) -->
 
 ## Description
-
-(This section should hold your project's detailed description)
-
-The idea is to use github.com as a central point of reference for our group's
-projects. A github.com organization ([KTH-SSAS](https://github.com/KTH-SSAS))
-has been created, where all SSAS members are added to. The organization is
-organized in teams that reflect the actual "teams" and collaborations that exist
-in the group.
-
-Each team will create one or more git repos on github.com under the KTH-SSAS
-organization where project assets (e.g. tex documents, small files, code, etc)
-is added. Github also has an issue tracker that can be used to keep track of the
-pending work in a visible way, where other team members or external
-collaborators can keep track of the work ahead and discuss.
-
-This README is meant as a common template for all KTH-SSAS projects. The aim is
-to have a uniform look and feel that is also usable and productive. When you use
-this template, try to conform with its structure. __If it is not
-sufficient/proper for you project, of course feel free to deviate or ignore
-it.__ Or, if you have suggestions, create a [new
-issue](https://github.com/KTH-SSAS/skeleton/issues/new) or [pull
-request](https://github.com/KTH-SSAS/skeleton/pull/new).
-
-To use this skeleton repository as a template for your project, simply create a new repository and select this repo as the template:
-
-
-![Screenshot_20201003_112921](https://user-images.githubusercontent.com/11805218/94988207-dc43c300-056b-11eb-9ae7-7041bd438133.png)
-
-See [this repo](https://github.com/KTH-SSAS/threatmove-iso-21434) for
-an example.
+Migrating enterprises and business capabilities to cloud platforms like Amazon Web Services (AWS)
+has become an increasingly common practice. However, securing cloud operations, especially at large
+scales, can quickly become intractable. Customer-side issues such as service misconfigurations, data
+breaches, and insecure changes are prevalent. Various solutions for automatic security assessments
+exist; however, no single one appeared both sufficiently cloud-centered and holistic. This paper,
+therefore, presents a domain-specific language (DSL) for describing AWS environments and reason
+about their security. The DSL for AWS reasons by simulating adversarial movements across attack
+graphs constructed from causal attack-defense logic embedded into the language itself. The DSL was
+tested on December 20, 2019 and March 2, 2020 through securiCAD Vanguard, which automated
+the modeling, simulation, and reporting workflow. The tests simulated attacks against six third
+party penetration testing scenarios for AWS. The DSL, as of March 2020, demonstrated its ability
+to represent essential structures and basic security issues. However, the modeling procedure could
+not identify planted credentials. Further, the DSL itself did not cover every involved service and
+tactic, such as deploying new instances and policy rollbacks. Nevertheless, the issues covered by the
+DSL were already reminiscent of common issues with major real-world precedents.
 
 ## Work Products
 
-- [ ] A checklist of pending and completed work products of the project, i.e.
-  project deliverables.
-- [x] An already produced deliverable is marked with a check.
-- [x] If the deliverable can be accessed online (or in the github repo) add
-  a [link](#) to it. For example, if the project includes the production of
-  a paper, link to the published paper in a journal.
-- [ ] If the deliverable is not yet delivered, leave the checkbox unchecked.
+- [x] Tests against the vulnerable-by-design scenarios provided by CloudGoat.
+- [x] First journal article draft.
+- [x] First submission-ready journal article.
+- [x] First article submission attempt.
+- [ ] Second journal article draft.
+- [ ] Second submission-ready journal article.
+- [ ] Second submission of revised article.
+- [ ] Published article.
 
 ## Resources
-- Add here in a bullet list to resources relevant to the project, for instance:
-- [ISO-21434](https://www.iso.org/standard/70918.html) - PDF needs to be purchased
-- [vehicleLang](https://github.com/mal-lang/vehicleLang)
+- [DSL for AWS repository](https://github.com/foreseeti/awsLang) - Might be private
+- [CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat) - Test case source
+- [Archived CloudGoat](https://github.com/viktorengstrom/cloudgoat)
 - [MAL - Meta Attack  Language](https://mal-lang.org)
-- [SecuriCAD](https://foreseeti.com)
-- [ThreatMOVE project](https://autosec.se/projects/)
+- [SecuriCAD Vanguard](https://foreseeti.com/securicad-vanguard-for-aws/) - Powered by the DSL for AWS and MAL
+- [SecuriCAD Vanguard on AWS](https://aws.amazon.com/marketplace/pp/foreseeti-securiCAD-Vanguard/B08424ZMPS)
 
 <br>
 
