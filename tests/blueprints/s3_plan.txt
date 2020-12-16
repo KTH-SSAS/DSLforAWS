@@ -1,0 +1,118 @@
+Terraform will perform the following actions:
+
+  # aws_iam_access_key.cg-kerrigan will be created
+  + resource "aws_iam_access_key" "cg-kerrigan" {
+      + encrypted_secret  = (known after apply)
+      + id                = (known after apply)
+      + key_fingerprint   = (known after apply)
+      + secret            = (sensitive value)
+      + ses_smtp_password = (sensitive value)
+      + status            = (known after apply)
+      + user              = "kerrigan"
+    }
+
+  # aws_iam_instance_profile.cg-ec2-meek-instance-profile will be created
+  + resource "aws_iam_instance_profile" "cg-ec2-meek-instance-profile" {
+      + arn         = (known after apply)
+      + create_date = (known after apply)
+      + id          = (known after apply)
+      + name        = "cg-ec2-meek-instance-profile-cgid35u2lwu74p"
+      + path        = "/"
+      + role        = "cg-ec2-meek-role-cgid35u2lwu74p"
+      + roles       = (known after apply)
+      + unique_id   = (known after apply)
+    }
+
+  # aws_iam_policy.cg-ec2-meek-policy will be created
+  + resource "aws_iam_policy" "cg-ec2-meek-policy" {
+      + arn         = (known after apply)
+      + description = "cg-ec2-meek-policy"
+      + id          = (known after apply)
+      + name        = "cg-ec2-meek-policy"
+      + path        = "/"
+      + policy      = jsonencode(
+            {
+              + Statement = [
+                  + {
+                      + Action   = [
+                          + "*",
+                        ]
+                      + Effect   = "Deny"
+                      + Resource = "*"
+                    },
+                ]
+              + Version   = "2012-10-17"
+            }
+        )
+    }
+
+  # aws_iam_policy.cg-ec2-mighty-policy will be created
+  + resource "aws_iam_policy" "cg-ec2-mighty-policy" {
+      + arn         = (known after apply)
+      + description = "cg-ec2-mighty-policy"
+      + id          = (known after apply)
+      + name        = "cg-ec2-mighty-policy"
+      + path        = "/"
+      + policy      = jsonencode(
+            {
+              + Statement = [
+                  + {
+                      + Action   = [
+                          + "*",
+                        ]
+                      + Effect   = "Allow"
+                      + Resource = "*"
+                    },
+                ]
+              + Version   = "2012-10-17"
+            }
+        )
+    }
+
+  # aws_iam_policy.cg-kerrigan-policy will be created
+  + resource "aws_iam_policy" "cg-kerrigan-policy" {
+      + arn         = (known after apply)
+      + description = "cg-kerrigan-policy"
+      + id          = (known after apply)
+      + name        = "cg-kerrigan-policy"
+      + path        = "/"
+      + policy      = jsonencode(
+            {
+              + Statement = [
+                  + {
+                      + Action   = [
+                          + "iam:ListRoles",
+                          + "iam:PassRole",
+                          + "iam:ListInstanceProfiles",
+                          + "iam:AddRoleToInstanceProfile",
+                          + "iam:RemoveRoleFromInstanceProfile",
+                          + "ec2:AssociateIamInstanceProfile",
+                          + "ec2:DescribeIamInstanceProfileAssociations",
+                          + "ec2:RunInstances",
+                        ]
+                      + Effect   = "Allow"
+                      + Resource = "*"
+                      + Sid      = "VisualEditor0"
+                    },
+                  + {
+                      + Action   = "ec2:CreateKeyPair"
+                      + Effect   = "Allow"
+                      + Resource = "*"
+                      + Sid      = "VisualEditor1"
+                    },
+                  + {
+                      + Action   = [
+                          + "ec2:DescribeInstances",
+                          + "ec2:DescribeVpcs",
+                          + "ec2:DescribeSubnets",
+                          + "ec2:DescribeSecurityGroups",
+                        ]
+                      + Effect   = "Allow"
+                      + Resource = "*"
+                    },
+                ]
+              + Version   = "2012-10-17"
+            }
+        )
+    }
+

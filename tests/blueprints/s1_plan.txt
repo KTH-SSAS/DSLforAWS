@@ -1,0 +1,80 @@
+Terraform will perform the following actions:
+
+  # aws_iam_access_key.cg-raynor will be created
+  + resource "aws_iam_access_key" "cg-raynor" {
+      + encrypted_secret  = (known after apply)
+      + id                = (known after apply)
+      + key_fingerprint   = (known after apply)
+      + secret            = (sensitive value)
+      + ses_smtp_password = (sensitive value)
+      + status            = (known after apply)
+      + user              = "raynor"
+    }
+
+  # aws_iam_policy.cg-raynor-policy will be created
+  + resource "aws_iam_policy" "cg-raynor-policy" {
+      + arn         = (known after apply)
+      + description = "cg-raynor-policy"
+      + id          = (known after apply)
+      + name        = "cg-raynor-policy"
+      + path        = "/"
+      + policy      = jsonencode(
+            {
+              + Statement = [
+                  + {
+                      + Action   = [
+                          + "iam:Get*",
+                          + "iam:List*",
+                          + "iam:SetDefaultPolicyVersion",
+                        ]
+                      + Effect   = "Allow"
+                      + Resource = "*"
+                      + Sid      = "IAMPrivilegeEscalationByRollback"
+                    },
+                ]
+              + Version   = "2012-10-17"
+            }
+        )
+    }
+
+  # aws_iam_user.cg-raynor will be created
+  + resource "aws_iam_user" "cg-raynor" {
+      + arn           = (known after apply)
+      + force_destroy = false
+      + id            = (known after apply)
+      + name          = "raynor"
+      + path          = "/"
+      + tags          = {
+          + "Name"     = "cg-raynor-cgidau7r3c94x9"
+          + "Scenario" = "iam-privesc-by-rollback"
+          + "Stack"    = "CloudGoat"
+        }
+      + unique_id     = (known after apply)
+    }
+
+  # aws_iam_user_policy_attachment.cg-raynor-attachment will be created
+  + resource "aws_iam_user_policy_attachment" "cg-raynor-attachment" {
+      + id         = (known after apply)
+      + policy_arn = (known after apply)
+      + user       = "raynor"
+    }
+
+  # null_resource.cg-create-iam-user-policy-version-2 will be created
+  + resource "null_resource" "cg-create-iam-user-policy-version-2" {
+      + id = (known after apply)
+    }
+
+  # null_resource.cg-create-iam-user-policy-version-3 will be created
+  + resource "null_resource" "cg-create-iam-user-policy-version-3" {
+      + id = (known after apply)
+    }
+
+  # null_resource.cg-create-iam-user-policy-version-4 will be created
+  + resource "null_resource" "cg-create-iam-user-policy-version-4" {
+      + id = (known after apply)
+    }
+
+  # null_resource.cg-create-iam-user-policy-version-5 will be created
+  + resource "null_resource" "cg-create-iam-user-policy-version-5" {
+      + id = (known after apply)
+    }
