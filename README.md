@@ -39,9 +39,6 @@ in markdown. -->
   <br>
 </h1>
 
-<p align="justify">
-  A README template for projects of the SSAS group.
-<p>
 
 ## Table of contents
 - [Quick Info](#quick-info)
@@ -69,21 +66,7 @@ in markdown. -->
 - [other link](#) -->
 
 ## Description
-Migrating enterprises and business capabilities to cloud platforms like Amazon Web Services (AWS)
-has become an increasingly common practice. However, securing cloud operations, especially at large
-scales, can quickly become intractable. Customer-side issues such as service misconfigurations, data
-breaches, and insecure changes are prevalent. Various solutions for automatic security assessments
-exist; however, no single one appeared both sufficiently cloud-centered and holistic. This paper,
-therefore, presents a domain-specific language (DSL) for describing AWS environments and reason
-about their security. The DSL for AWS reasons by simulating adversarial movements across attack
-graphs constructed from causal attack-defense logic embedded into the language itself. The DSL was
-tested on December 20, 2019 and March 2, 2020 through securiCAD Vanguard, which automated
-the modeling, simulation, and reporting workflow. The tests simulated attacks against six third
-party penetration testing scenarios for AWS. The DSL, as of March 2020, demonstrated its ability
-to represent essential structures and basic security issues. However, the modeling procedure could
-not identify planted credentials. Further, the DSL itself did not cover every involved service and
-tactic, such as deploying new instances and policy rollbacks. Nevertheless, the issues covered by the
-DSL were already reminiscent of common issues with major real-world precedents.
+Migrating enterprises and business capabilities to cloud platforms like Amazon Web Services (AWS) has become increasingly common. However, securing cloud operations, especially at large scales, can quickly become intractable. Customer-side issues such as service misconfigurations, data breaches, and insecure changes are prevalent. Furthermore, cloud-specific tactics and techniques paired with application vulnerabilities create a large and complex search space. Various solutions and modeling languages for cloud security assessments exist. However, no single one appeared sufficiently cloud-centered and holistic. Many also did not account for tactical security dimensions. This paper, therefore, presents a domain-specific modeling language for AWS environments. When used to model AWS environments, the language automatically constructs and traverses attack graphs to assess security. Assessments, therefore, require minimal security expertise from the user. The modeling language was tested on six third party AWS environments through securiCAD Vanguard, a commercial tool built around the AWS modeling language. As of March 2020, the modeling language could represent essential AWS structures, cloud tactics, and threats. However, the tests highlighted certain shortcomings. Data collection steps, such as planted credentials, and some missing tactics were obvious. Nevertheless, the issues covered by the DSL were already reminiscent of common issues with real-world precedents. Future additions to attacker tactics and addressing data collection should yield considerable improvements.
 
 ## Work Products
 
@@ -91,7 +74,7 @@ DSL were already reminiscent of common issues with major real-world precedents.
 - [x] First journal article draft.
 - [x] First submission-ready journal article.
 - [x] First article submission attempt.
-- [ ] Second journal article draft.
+- [x] Second journal article draft.
 - [ ] Second submission-ready journal article.
 - [ ] Second submission of revised article.
 - [ ] Published article.
