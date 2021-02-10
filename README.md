@@ -54,6 +54,8 @@ in markdown. -->
   - [Viktor Engström](https://github.com/viktorengstrom/)
 - External collaborators:
   - Foreseeti AB
+    - Erik Ringdahl
+    - Max Wällstedt
 - Status: running :green_circle:
 - Timeline: HT 2019 - Ongoing
 
