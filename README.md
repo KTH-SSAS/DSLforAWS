@@ -85,6 +85,7 @@ Migrating enterprises and business capabilities to cloud platforms like Amazon W
 - [DSL for AWS repository](https://github.com/foreseeti/awsLang) - Might be private
 - [CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat) - Test case source
 - [Archived CloudGoat](https://github.com/viktorengstrom/cloudgoat)
+- [awspx](https://github.com/fsecurelabs/awspx) - Similar tool used for comparison
 - [MAL - Meta Attack  Language](https://mal-lang.org)
 - [SecuriCAD Vanguard](https://foreseeti.com/securicad-vanguard-for-aws/) - Powered by the DSL for AWS and MAL
 - [SecuriCAD Vanguard on AWS](https://aws.amazon.com/marketplace/pp/foreseeti-securiCAD-Vanguard/B08424ZMPS)
