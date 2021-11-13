@@ -7,7 +7,7 @@ in markdown. -->
   <img src=".images/top.jpg" alt="Decorative image">
   <br>
   <br>
-  <span>Project Name</span>
+  <span>DSL for AWS</span>
   <br>
 
   <!-- Below, there are 4 small button-like images. These are called "badges"
