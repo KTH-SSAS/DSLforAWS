@@ -56,8 +56,8 @@ in markdown. -->
   - Foreseeti AB
     - Erik Ringdahl
     - Max Wällstedt
-- Status: running :green_circle:
-- Timeline: HT 2019 - Ongoing
+- Status: finished :orange_circle:
+- Timeline: HT 2019 - HT 2022
 
 <!-- ### Project links -->
 
@@ -68,7 +68,7 @@ in markdown. -->
 - [other link](#) -->
 
 ## Description
-Migrating enterprises and business capabilities to cloud platforms like Amazon Web Services (AWS) has become increasingly common. However, securing cloud operations, especially at large scales, can quickly become intractable. Customer-side issues such as service misconfigurations, data breaches, and insecure changes are prevalent. Furthermore, cloud-specific tactics and techniques paired with application vulnerabilities create a large and complex search space. Various solutions and modeling languages for cloud security assessments exist. However, no single one appeared sufficiently cloud-centered and holistic. Many also did not account for tactical security dimensions. This paper, therefore, presents a domain-specific modeling language for AWS environments. When used to model AWS environments, the language automatically constructs and traverses attack graphs to assess security. Assessments, therefore, require minimal security expertise from the user. The modeling language was tested on six third party AWS environments through securiCAD Vanguard, a commercial tool built around the AWS modeling language. As of March 2020, the modeling language could represent essential AWS structures, cloud tactics, and threats. However, the tests highlighted certain shortcomings. Data collection steps, such as planted credentials, and some missing tactics were obvious. Nevertheless, the issues covered by the DSL were already reminiscent of common issues with real-world precedents. Future additions to attacker tactics and addressing data collection should yield considerable improvements.
+Migrating enterprises and business capabilities to cloud platforms like Amazon Web Services (AWS) has become increasingly common. However, securing cloud operations, especially at large scales, can quickly become intractable. Customer-side issues such as service misconfigurations, data breaches, and insecure changes are prevalent. Furthermore, cloud-specific tactics and techniques paired with application vulnerabilities create a large and complex search space. Various solutions and modeling languages for cloud security assessments exist. However, no single one appeared sufficiently cloud-centered and holistic. Many also did not account for tactical security dimensions. This paper, therefore, presents a domain-specific modeling language for AWS environments. When used to model AWS environments, manually or automatically, the language automatically constructs and traverses attack graphs to assess security. Assessments, therefore, require minimal security expertise from the user. The modeling language was primarily tested on four third-party AWS environments through securiCAD Vanguard, a commercial tool built around the AWS modeling language. The language was validated further by measuring performance on models provided by anonymous end users and a comparison with a similar open source assessment tool. As of March 2020, the modeling language could represent essential AWS structures, cloud tactics, and threats. However, the tests highlighted certain shortcomings. Data collection steps, such as planted credentials, and some missing tactics were obvious. Nevertheless, the issues covered by the DSL were already reminiscent of common issues with real-world precedents. Future additions to attacker tactics and addressing data collection should yield considerable improvements.
 
 ## Work Products
 
@@ -77,12 +77,14 @@ Migrating enterprises and business capabilities to cloud platforms like Amazon W
 - [x] First submission-ready journal article.
 - [x] First article submission attempt.
 - [x] Second journal article draft.
-- [ ] Second submission-ready journal article.
-- [ ] Second submission of revised article.
-- [ ] Published article.
+- [x] Second submission-ready journal article.
+- [x] Second submission of revised article.
+- [x] Published article.
+- [ ] Update Kudos page.
 
 ## Resources
-- [DSL for AWS repository](https://github.com/foreseeti/awsLang) - Might be private
+- [Research paper](https://dx.doi.org/10.1145/3570903)
+- [DSL for AWS repository](https://github.com/mal-lang/prismoLang) - Might be private
 - [CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat) - Test case source
 - [Archived CloudGoat](https://github.com/viktorengstrom/cloudgoat)
 - [awspx](https://github.com/fsecurelabs/awspx) - Similar tool used for comparison
